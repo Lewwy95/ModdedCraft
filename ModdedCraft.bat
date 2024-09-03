@@ -90,6 +90,7 @@ echo Installing patches...
 powershell -c "Expand-Archive '%~dp0\bin\Patches\vanilla-tweaks.zip' -Force '%~dp0\bin\Temp'"
 copy "%~dp0\bin\Temp\WoW_tweaked.exe" "%~dp0..\"
 copy "%~dp0\bin\Temp\vanilla-tweaks.exe" "%~dp0..\"
+copy "%~dp0\bin\Patches\turtle-autologin\Patch-Y.mpq" "%~dp0..\Data\"
 cls
 
 :: Clear 'Temp' Folder
@@ -103,7 +104,7 @@ cls
 :launch
 echo Launching game...
 timeout /t 2 /nobreak >nul
-start "%~dp0..\WoW_tweaked.exe"
+start "" "%~dp0..\WoW_tweaked.exe"
 
 :: Finish
 endlocal

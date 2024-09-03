@@ -10,5 +10,6 @@ if exist "%~dp0..\Interface\AddOns\ShaguTweaks" rmdir /s /q "%~dp0..\Interface\A
 :: Uninstall patches
 if exist "%~dp0..\WoW_tweaked.exe" del /s /q "%~dp0..\WoW_tweaked.exe"
 if exist "%~dp0..\vanilla-tweaks.exe" del /s /q "%~dp0..\vanilla-tweaks.exe"
+if exist "%~dp0..\Data\Patch-Y.mpq" del /s /q "%~dp0..\Data\Patch-Y.mpq"
 
 endlocal
